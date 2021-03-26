@@ -1,0 +1,55 @@
+.productDetail {
+	padding: 10px;
+	margin-bottom: 500px;
+
+	&__image-description {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	&__price--button {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__price {
+		font-weight: 600;
+	}
+}
+
+.productDetail-image {
+	width: 400px;
+	height: 250px;
+	border-radius: 10px;
+	margin-right: 30px;
+	box-shadow: 6px 13px 10px -3px $box-shadow;
+}
+
+.fas {
+	color: $success;
+	width: 50px;
+	transition: 700ms;
+	transform: rotate(360deg);
+}
+
+.far {
+	color: $gray;
+	width: 50px;
+	transition: 400ms;
+}
+
+.fa-check-circle {
+	margin: 30px;
+}
+// --------------- MEDIA phone -------------
+
+@media only screen and (max-width: 750px) {
+	.productDetail__image-description {
+		flex-wrap: wrap;
+	}
+	.productDetail-image {
+		width: 350px;
+		height: 200px;
+		margin: 30px auto;
+	}
+}

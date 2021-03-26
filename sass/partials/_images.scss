@@ -1,0 +1,36 @@
+.product-img {
+	display: block;
+	width: 100%;
+	height: 230px;
+	border-radius: 10px 10px 0 0;
+	margin: 0;
+}
+
+.logo {
+	width: 100px;
+	border-radius: 50%;
+	margin: 30px;
+}
+
+.header-image {
+	display: block;
+	width: 80%;
+	margin: 50px auto;
+	border-radius: 5px;
+}
+
+// --------------- MEDIA phone -------------
+
+@media only screen and (max-width: 600px) {
+	.logo {
+		margin: 10px auto;
+	}
+}
+
+// --------------- MEDIA tablet -------------
+
+@media only screen and (max-width: 768px) {
+	.product-img {
+		height: 160px;
+	}
+}

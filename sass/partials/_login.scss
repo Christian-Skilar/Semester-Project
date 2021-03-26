@@ -1,0 +1,72 @@
+// --------------- LOGIN FORM -------------
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	margin: 0 auto;
+	background: $white;
+	padding: 30px 20px 80px 20px;
+	border-radius: 10px;
+}
+
+form > div {
+	margin-bottom: 35px;
+}
+
+form input {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid $black;
+}
+
+.login-logo {
+	width: 250px;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+// --------------- LOGIN BUTTON -------------
+
+.login-btn {
+	@include button;
+}
+
+.loginMessage {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.fa-sign-in-alt {
+	color: $active !important;
+}
+
+// --------------- LOGOUT BUTTON -------------
+
+#logout {
+	text-transform: capitalize;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	background: $white;
+	border: none;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.fa-sign-out-alt {
+	color: $red-error !important;
+	width: 20px !important;
+}
+
+// --------------- MEDIA -------------
+
+@media only screen and (max-width: 600px) {
+	.loginMessage {
+		justify-content: center;
+	}
+}

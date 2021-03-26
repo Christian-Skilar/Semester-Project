@@ -1,0 +1,117 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: $white;
+	font-family: 'Poppins', sans-serif;
+	height: 100vh;
+	width: 100%;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.featured {
+	text-align: center;
+}
+
+// ---------- PRODUCT CARD ON PRODUCT PAGE ----------
+
+.product-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.product {
+	margin: 30px;
+	border-radius: 10px;
+	background: $white;
+	color: $primary-text;
+	width: 350px;
+	box-shadow: 6px 13px 10px -3px $box-shadow;
+
+	&__cardtext--h4 {
+		transition: 200ms;
+	}
+	&__cardtext--h4:hover {
+		transform: scale(1.08);
+	}
+}
+
+.price-cart {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 10px;
+	margin-bottom: 30px;
+}
+
+.editBtn {
+	@include button;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+i {
+	cursor: pointer;
+}
+
+// ----------- FEATURED ON HOME PAGE -----------
+
+.featured-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.edit-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+
+.feature-checbox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	input {
+		width: 20px;
+		margin: 0;
+	}
+}
+
+// ----------- SEARCH FIELD PRODUCT PAGE -----------
+
+.search {
+	display: block;
+	margin: 30px auto;
+	padding: 10px 0;
+	border: none;
+	border-bottom: 1px solid $gray;
+}
+
+.search:focus {
+	outline: none;
+}
+
+// --------------- MEDIA -------------
+
+@media only screen and (max-width: 768px) {
+	.container {
+		max-width: 700px;
+	}
+
+	.product {
+		margin: 20px;
+		width: 250px;
+	}
+}

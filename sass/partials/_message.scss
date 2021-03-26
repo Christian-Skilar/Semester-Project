@@ -1,0 +1,50 @@
+// ----------- GENERAL MESSAGE STYLES -------------
+
+.message {
+	width: 100%;
+	padding: 1rem;
+	border: 1px solid $gray;
+	border-radius: 5px;
+	color: $gray;
+}
+
+.message.success {
+	border-color: $success;
+	color: $white;
+	background: $success;
+}
+
+.message.warning {
+	border-color: $warning;
+	color: $white;
+	background: $warning;
+}
+
+.message.error {
+	border-color: $red-error;
+	color: $white;
+	background: $red-error;
+}
+
+// ----------- LOGIN FORM ERROR MESSAGE -------------
+
+.form-error {
+	display: none;
+	color: $red-error;
+	margin-top: 2px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+}
+
+// ----------- EMPTY CART MESSAGE -------------
+
+.fav-message {
+	display: flex;
+	align-items: center;
+	margin: 20px auto;
+	border: 2px solid $red-error;
+	color: $black;
+	padding: 10px;
+	background: $white;
+	border-radius: 5px;
+}

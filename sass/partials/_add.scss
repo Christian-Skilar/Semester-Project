@@ -1,0 +1,18 @@
+.addForm {
+	display: flex;
+	flex-direction: column;
+
+	&__description {
+		height: 150px;
+	}
+}
+
+.btn {
+	@include button;
+}
+
+.btn-delete {
+	@include button;
+	background: $red-error;
+	margin-top: -10px;
+}

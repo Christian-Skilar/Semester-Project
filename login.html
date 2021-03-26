@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link href="./css/styles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Source+Sans+Pro:wght@300;600;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="data:;base64,=" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="menu-container"></div>
+
+            <form id="contactForm">
+                <img class="login-logo" src="./img/logo.png" alt="larsen watch logo">
+                <div class="message-container"></div>
+
+                <div>
+                    <input id="username" placeholder="Username" />
+                    <div class="form-error" id="usernameError">username must be more than 1 character</div>
+                </div>
+                <div>
+                    <input id="password" type="password" placeholder="Password" />
+                    <div class="form-error" id="passwordError">Your password is not valid</div>
+                </div>
+                <button class="login-btn">Log In</button>
+            </form>
+        </div>
+        <script src="./js/login.js" type="module"></script>
+    </body>
+</html>

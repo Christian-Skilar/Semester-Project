@@ -1,0 +1,13 @@
+h1 {
+	@include header-text;
+}
+
+.product {
+	&__cardtext--h4 {
+		@include card-textH4;
+	}
+
+	&__cardtext--p {
+		@include card-text;
+	}
+}

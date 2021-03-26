@@ -1,0 +1,38 @@
+.menu {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-top: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: $primary-text;
+}
+
+.menu a {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	text-decoration: none;
+	color: $black;
+	margin: 0 10px;
+	transition: 200ms;
+}
+
+.menu a:hover {
+	color: $active;
+}
+
+.menu a.active {
+	color: $active;
+	padding: 5px 10px;
+	font-weight: 400;
+}
+
+// --------- MEDIA --------------
+
+@media only screen and (max-width: 600px) {
+	.menu {
+		flex-direction: column;
+	}
+}

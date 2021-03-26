@@ -1,0 +1,43 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Add Products</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Source+Sans+Pro:wght@300;600;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/styles.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="menu-container"></div>
+
+            <h1 class="">Add Product</h1>
+
+            <form>
+                <div class="message-container"></div>
+
+                <div>
+                    <label for="title">Title</label>
+                    <input id="title" />
+                </div>
+                <div>
+                    <label for="price">Price</label>
+                    <input id="price" />
+                </div>
+                <div class="addForm">
+                    <label for="description">Description</label>
+                    <textarea class="addForm__description" id="description"></textarea>
+                </div>
+                <div class="addForm">
+                    <label for="img">Add image url</label>
+                    <input type="text" id="image">
+                </div>
+                <button class="btn">Add</button>
+            </form>
+        </div>
+        <script src="/js/add.js" type="module"></script>
+    </body>
+</html>

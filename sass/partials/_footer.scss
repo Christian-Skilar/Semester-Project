@@ -10,7 +10,7 @@ footer {
 	border-top: 1px solid gray;
 
 	div {
-		text-align: center;
+		text-align: left;
 
 		ul {
 			padding: 0;
@@ -22,7 +22,19 @@ footer {
 	}
 }
 
-.s-media {
+.fa-facebook:hover {
+	color: #335aa6;
+}
+
+.fa-twitter:hover {
+	color: #49b1f2;
+}
+
+.fa-instagram:hover {
+	color: #d94848;
+}
+
+.fa-instagram:hover .fa-twitter:hover .s-media {
 	display: flex;
 	justify-content: center;
 }
@@ -30,6 +42,7 @@ footer {
 .media {
 	transition: 200ms;
 	margin: 0 10px;
+	font-size: 40px;
 }
 
 .media:hover {
@@ -38,7 +51,7 @@ footer {
 
 .copyright {
 	font-size: 14px;
-	padding: 10px;
+	padding: 2px;
 	width: 100%;
 	margin: 0;
 	color: $white;

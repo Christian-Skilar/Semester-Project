@@ -27,7 +27,7 @@ export default function createMenu() {
 	console.log(username);
 
 	container.innerHTML = `<div class="menu">
-								<img class="logo" src="../img/logo.png" alt="Logo">
+								<a href="/"><img class="logo" src="../img/logo.png" alt="Logo"></a>
 								<a href="/" class="${pathname === "/" ? "active" : ""}">Home</a>
 								<a href="products.html" class="${pathname === "/products.html"? "active": ""}">Products</a>
 								<a href="cart.html" class="${pathname === "/cart.html"? "active": ""}">Cart</a>
